@@ -1,0 +1,131 @@
+.practice-section {
+  padding: 120px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sub-tag {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  color: #a0aec0;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 48px;
+  color: var(--primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-title strong {
+  font-weight: 900;
+  color: var(--secondary);
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.practice-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 40px 10px 40px 10px; /* Attractive asymmetrical shape */
+  border: 1px solid #f0f4f8;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: left;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--secondary);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.practice-icon {
+  font-size: 45px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.practice-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.practice-card p {
+  color: #718096;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.view-details-btn {
+  font-weight: 800;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.practice-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  border-color: rgba(253, 185, 19, 0.3);
+  border-radius: 10px 40px 10px 40px; /* Animate shape on hover */
+}
+
+.practice-card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .practice-section {
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
+  .practice-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .practice-card {
+    padding: 40px 30px;
+  }
+}

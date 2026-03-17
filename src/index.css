@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* Colors - Based on Reference Images */
+  --primary: #003b5c; /* Deep Blue */
+  --secondary: #fdb913; /* Yellow/Gold */
+  --accent: #fdb913;
+  --bg-dark: #003b5c;
+  --bg-light: #f4f7f9;
+  --text-white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-muted: #666666;
+  --border-light: rgba(255, 255, 255, 0.2);
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-heading: 'Inter', sans-serif; /* The UI looks very modern, using Inter for mostly everything */
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--primary); /* Prevents white gaps at top/bottom */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--primary);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.btn-outline {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+/* Removed global section padding to fix gaps */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Utility */
+.text-white { color: var(--text-white); }
+.bg-primary { background-color: var(--primary); }
+.bg-light { background-color: var(--bg-light); }

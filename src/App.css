@@ -1,0 +1,23 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary); /* Keeps top/bottom overflow blue */
+}
+
+main {
+  flex: 1;
+  background-color: var(--bg-light); /* Content default background */
+}
+
+/* Specific section overrides where needed */
+#home, .hero-section {
+  background-color: var(--primary);
+}
+
+/* Custom responsiveness for the whole app */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px !important;
+  }
+}
