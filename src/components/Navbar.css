@@ -36,14 +36,16 @@
 }
 
 .logo-text strong {
-  font-size: 32px; /* Increased from 28px */
+  font-size: 22px;
+  /* Increased from 28px */
   font-weight: 950;
   color: var(--secondary);
   letter-spacing: 0.5px;
 }
 
 .logo-text span {
-  font-size: 11px; /* Increased from 10px */
+  font-size: 11px;
+  /* Increased from 10px */
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #f1f5f9;
@@ -52,7 +54,8 @@
 
 .nav-links {
   display: flex;
-  gap: 24px; /* Balanced gap */
+  gap: 24px;
+  /* Balanced gap */
   align-items: center;
 }
 
@@ -141,10 +144,18 @@
   .hamburger {
     display: flex;
   }
-  
-  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
-  .hamburger.active span:nth-child(2) { opacity: 0; }
-  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
 
   .nav-links {
     position: fixed;
@@ -157,7 +168,7 @@
     flex-direction: column;
     padding: 100px 40px;
     transition: 0.4s ease;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
     align-items: flex-start;
   }
 
@@ -197,8 +208,15 @@
 }
 
 @keyframes modalIn {
-  from { transform: scale(0.8) translateY(20px); opacity: 0; }
-  to { transform: scale(1) translateY(0); opacity: 1; }
+  from {
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .modal-close {
@@ -228,7 +246,9 @@
   gap: 15px;
 }
 
-.modal-content input, .modal-content select, .modal-content textarea {
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
   padding: 15px 20px;
   border: 1px solid #edf2f7;
   border-radius: 12px;
@@ -238,7 +258,9 @@
   transition: var(--transition);
 }
 
-.modal-content input:focus, .modal-content select:focus, .modal-content textarea:focus {
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
   outline: none;
   border-color: var(--secondary);
   background-color: white;

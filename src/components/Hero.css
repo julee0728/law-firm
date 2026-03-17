@@ -53,8 +53,9 @@
 
 /* TITLE */
 .hero-title-new {
-  font-size: 64px;
-  line-height: 0.85; /* Even tighter line height */
+  font-size: 40px;
+  line-height: 0.85;
+  /* Even tighter line height */
   margin-bottom: 24px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -70,9 +71,10 @@
 .hero-title-new span {
   display: block;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 40px;
   color: #ffffff;
-  margin-top: -5px; /* Pull it closer */
+  margin-top: -5px;
+  /* Pull it closer */
 }
 
 /* DESCRIPTION */
