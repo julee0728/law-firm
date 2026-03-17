@@ -297,6 +297,14 @@
     padding: 60px 0;
   }
 
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
   .play-circle {
     width: 70px;
     height: 70px;
@@ -307,10 +315,30 @@
   }
 
   .stat-card {
-    padding: 30px;
+    padding: 25px;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
   }
 
   .stat-card h3 {
-    font-size: 36px;
+    font-size: 28px;
+  }
+
+  .card-arrow {
+    transform: rotate(90deg);
+  }
+
+  .working-hours-box {
+    padding: 15px 25px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    width: auto;
+    margin: 0 20px;
+  }
+
+  .working-hours-box p {
+    font-size: 15px;
   }
 }

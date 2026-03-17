@@ -216,11 +216,18 @@
 /* RESPONSIVE */
 @media (max-width: 968px) {
   .hero-title-new {
-    font-size: 30px;
+    font-size: 36px; /* Slightly larger than before, but safe */
   }
 
   .hero-title-new span {
-    font-size: 30px;
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .hero-description-new {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 100%;
   }
 
   .hero-features-grid {
@@ -229,26 +236,42 @@
 
   .hero-features-container {
     position: relative;
+    background-color: #1e293b;
   }
 
   .feature-box {
     height: auto;
     padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .feature-box:last-child {
+    border-bottom: none;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-title-new {
+    font-size: 32px;
+  }
+  
+  .hero-title-new span {
+    font-size: 32px;
+  }
+
   .hero-cta-group {
     flex-direction: column;
+    width: 100%;
   }
 
   .btn-consult,
   .btn-learn {
     width: 100%;
     text-align: center;
+    padding: 14px 20px;
   }
 
   .container.hero-container-new {
-    padding: 60px 20px;
+    padding: 100px 25px 60px 25px; /* More top padding for fixed navbar */
   }
 }

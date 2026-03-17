@@ -1,6 +1,12 @@
 .news-section {
-  padding: 120px 0;
+  padding: 100px 0;
   background-color: #f7fafc;
+}
+
+@media (max-width: 480px) {
+  .news-section {
+    padding: 60px 0;
+  }
 }
 
 .news-grid {
@@ -62,6 +68,17 @@
   line-height: 1.4;
   color: var(--primary);
   font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .news-content h3 {
+    font-size: 20px;
+  }
+
+  .news-badge {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
 }
 
 .news-link-btn {

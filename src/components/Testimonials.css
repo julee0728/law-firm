@@ -1,6 +1,12 @@
 .testimonials-section {
-  padding: 120px 0;
+  padding: 100px 0;
   background-color: #fdfdfd;
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 60px 0;
+  }
 }
 
 .testimonials-header {
@@ -11,9 +17,15 @@
 }
 
 .testimonials-header h2 {
-  font-size: 24px;
+  font-size: 32px;
   color: var(--primary);
   font-weight: 900;
+}
+
+@media (max-width: 480px) {
+  .testimonials-header h2 {
+    font-size: 26px;
+  }
 }
 
 .header-link {
@@ -44,6 +56,19 @@
 .marquee-content .testimonial-card {
   width: 400px;
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .marquee-content .testimonial-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-content .testimonial-card {
+    width: 280px;
+    padding: 25px;
+  }
 }
 
 @keyframes marquee {

@@ -1,6 +1,12 @@
 .attorneys-section {
-  padding: 120px 0;
+  padding: 100px 0;
   background: #fdfdfd;
+}
+
+@media (max-width: 480px) {
+  .attorneys-section {
+    padding: 60px 0;
+  }
 }
 
 .attorneys-grid {
@@ -85,11 +91,16 @@
 @media (max-width: 640px) {
   .attorneys-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
   
   .attorney-image {
-    height: 380px;
-    max-width: 350px;
+    height: 350px; /* Reduced for better look */
+    max-width: 280px; /* More compact */
     margin: 0 auto 25px;
+  }
+
+  .attorney-info h3 {
+    font-size: 22px;
   }
 }

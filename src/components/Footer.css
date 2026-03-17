@@ -110,14 +110,37 @@
 }
 
 @media (max-width: 640px) {
+  .footer-main {
+    padding: 60px 0 30px;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center;
   }
-  
+
+  .footer-brand p {
+    margin: 0 auto 25px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-links ul {
+    align-items: center;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 }

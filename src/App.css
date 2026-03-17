@@ -15,9 +15,3 @@ main {
   background-color: var(--primary);
 }
 
-/* Custom responsiveness for the whole app */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 36px !important;
-  }
-}

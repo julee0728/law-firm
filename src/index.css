@@ -104,3 +104,26 @@ section {
 .text-white { color: var(--text-white); }
 .bg-primary { background-color: var(--primary); }
 .bg-light { background-color: var(--bg-light); }
+
+/* Global Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  h2 {
+    font-size: 30px !important;
+    line-height: 1.2;
+  }
+
+  .btn {
+    padding: 14px 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 26px !important;
+  }
+}

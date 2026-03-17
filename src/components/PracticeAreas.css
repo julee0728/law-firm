@@ -19,8 +19,15 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  .sub-tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
 .section-title {
-  font-size: 25px;
+  font-size: 32px; /* Consistency with other sections */
   color: var(--primary);
   margin-bottom: 20px;
   line-height: 1.2;
@@ -29,6 +36,12 @@
 .section-title strong {
   font-weight: 900;
   color: var(--secondary);
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 26px;
+  }
 }
 
 .practice-grid {
