@@ -27,7 +27,7 @@ const News = () => {
       date: 'February 28, 2024',
       tag: 'Expert Insight',
       title: 'Understanding Your Rights in a Commercial Truck Collision',
-      image: 'https://images.unsplash.com/photo-1586333242961-21f59e0d238d?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80', // Reliable truck image
       content: 'Trucking accidents are significantly different from standard passenger vehicle crashes. Federal motor carrier safety regulations add a layer of legal complexity that requires specialized investigation of black box data and driver logs.'
     }
   ];

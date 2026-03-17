@@ -282,13 +282,14 @@
   }
 
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+}
 
-  .stat-pill {
-    border-radius: 30px;
-    /* Reset on mobile */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
   }
 }
 

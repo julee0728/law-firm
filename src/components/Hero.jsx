@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 import heroImg from '../assets/hero.png';
+import DetailModal from './DetailModal';
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const firmDetails = {
+    title: "About Our Firm",
+    content: "Burg & Brock, Inc. has been a cornerstone of the legal community in Australia for over two decades. We specialize in Personal Injury, Criminal Defense, and Business Law ventures. With a track record of over $1 Billion in settlements, our commitment to justice is unparalleled. Our team of experienced attorneys is dedicated to providing the highest level of legal representation, combined with personalized attention to each and every case."
+  };
+
   return (
     <section className="hero-section">
       <div className="hero-overlay"></div>
@@ -23,12 +31,19 @@ const Hero = () => {
             <button className="btn-consult" onClick={() => window.location.href = 'tel:+1234567890'}>
               Consult Now
             </button>
-            <button className="btn-learn">
+            <button className="btn-learn" onClick={() => setIsModalOpen(true)}>
               Learn More
             </button>
           </div>
         </div>
       </div>
+
+      <DetailModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title={firmDetails.title}
+        content={firmDetails.content}
+      />
 
       <div className="hero-features-container">
         <div className="container">

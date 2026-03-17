@@ -40,8 +40,8 @@
 .results-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-top: 80px;
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .result-card {

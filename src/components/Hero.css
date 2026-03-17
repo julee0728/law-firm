@@ -53,7 +53,7 @@
 
 /* TITLE */
 .hero-title-new {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 0.85;
   /* Even tighter line height */
   margin-bottom: 24px;
@@ -71,7 +71,7 @@
 .hero-title-new span {
   display: block;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   color: #ffffff;
   margin-top: -5px;
   /* Pull it closer */
@@ -214,20 +214,40 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
+  .hero-section {
+    background-position: 70% center;
+    min-height: auto;
+    padding-top: 100px;
+  }
+
+  .container.hero-container-new {
+    padding: 60px 40px;
+  }
+
   .hero-title-new {
-    font-size: 36px; /* Slightly larger than before, but safe */
+    font-size: 40px;
   }
 
   .hero-title-new span {
-    font-size: 36px;
-    margin-top: 0;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: 60% center;
+    text-align: center;
   }
 
-  .hero-description-new {
-    font-size: 16px;
-    margin-bottom: 30px;
+  .hero-content-new {
+    align-items: center;
     max-width: 100%;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+    width: 100%;
   }
 
   .hero-features-grid {
@@ -243,10 +263,7 @@
     height: auto;
     padding: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  }
-
-  .feature-box:last-child {
-    border-bottom: none;
+    justify-content: center;
   }
 }
 
@@ -254,7 +271,7 @@
   .hero-title-new {
     font-size: 32px;
   }
-  
+
   .hero-title-new span {
     font-size: 32px;
   }
@@ -268,10 +285,15 @@
   .btn-learn {
     width: 100%;
     text-align: center;
-    padding: 14px 20px;
+    padding: 16px 20px;
   }
 
   .container.hero-container-new {
-    padding: 100px 25px 60px 25px; /* More top padding for fixed navbar */
+    padding: 60px 20px;
+  }
+
+  .hero-description-new {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 }
