@@ -21,15 +21,22 @@
 }
 
 @keyframes detailIn {
-  from { transform: scale(0.9) translateY(30px); opacity: 0; }
-  to { transform: scale(1) translateY(0); opacity: 1; }
+  from {
+    transform: scale(0.9) translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .detail-modal-close {
   position: absolute;
   top: 25px;
   right: 25px;
-  font-size: 40px;
+  font-size: 20px;
   color: #cbd5e0;
   background: none;
   border: none;
@@ -49,11 +56,11 @@
 }
 
 .detail-modal-icon {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .detail-modal-header h2 {
-  font-size: 32px;
+  font-size: 20px;
   color: var(--primary);
   font-weight: 900;
 }

@@ -20,7 +20,7 @@
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 25px;
   color: var(--primary);
   margin-bottom: 20px;
   line-height: 1.2;
@@ -40,11 +40,12 @@
 .practice-card {
   background: white;
   padding: 50px 40px;
-  border-radius: 40px 10px 40px 10px; /* Attractive asymmetrical shape */
+  border-radius: 40px 10px 40px 10px;
+  /* Attractive asymmetrical shape */
   border: 1px solid #f0f4f8;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-align: left;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
   position: relative;
   overflow: hidden;
 }
@@ -62,13 +63,13 @@
 }
 
 .practice-icon {
-  font-size: 45px;
+  font-size: 20px;
   margin-bottom: 30px;
   display: block;
 }
 
 .practice-card h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: var(--primary);
   font-weight: 800;
@@ -95,9 +96,10 @@
 
 .practice-card:hover {
   transform: translateY(-20px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
   border-color: rgba(253, 185, 19, 0.3);
-  border-radius: 10px 40px 10px 40px; /* Animate shape on hover */
+  border-radius: 10px 40px 10px 40px;
+  /* Animate shape on hover */
 }
 
 .practice-card:hover::before {
@@ -115,16 +117,16 @@
   .practice-section {
     padding: 80px 0;
   }
-  
+
   .section-title {
     font-size: 36px;
   }
-  
+
   .practice-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .practice-card {
     padding: 40px 30px;
   }

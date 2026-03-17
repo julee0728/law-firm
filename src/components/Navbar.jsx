@@ -45,6 +45,7 @@ const Navbar = () => {
           <li><a href="#attorneys" onClick={() => setIsMenuOpen(false)}>ATTORNEYS</a></li>
           <li><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
           <li><a href="#news" onClick={() => setIsMenuOpen(false)}>ACCIDENT NEWS</a></li>
+          <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>FEEDBACK</a></li>
           
           {/* Mobile Only CTA */}
           <li className="mobile-only-actions">

@@ -9,32 +9,21 @@ const About = () => {
   return (
     <section id="about" className="about-section bg-light">
       <div className="container">
-        <div className="about-header">
-          <span className="sub-tag">LAW OFFICES OF BURG & BROCK</span>
-          <div className="about-main-grid">
-            <div className="about-video-side">
-              <div className="play-button-wrapper" onClick={() => setShowVideo(true)}>
-                <div className="play-circle">
-                  <div className="play-triangle"></div>
-                </div>
-                <span>Play</span>
-              </div>
-            </div>
-            
-            <div className="about-content-side">
-              <h2 className="about-title">
-                What should you look for in a <strong>high-quality personal injury attorney?</strong>
-              </h2>
-              <p className="about-text">
-                First is someone with a solid, credible track record of success. The Law Offices of Burg and Brock, Inc. have handled over 20,000 personal injury cases and earned a 99% success rate in the process. That long and illustrious track record has translated into over $1 billion in damages for our clients.... 
-                <button 
-                  className="inline-learn-more" 
-                  onClick={() => setShowDetail(true)}
-                >
-                  Learn more
-                </button>
-              </p>
-            </div>
+        <div className="about-header-centered">
+          <span className="sub-tag centered">LAW OFFICES OF BURG & BROCK</span>
+          <div className="about-content-centered">
+            <h2 className="about-title">
+              What should you look for in a <strong>high-quality personal injury attorney?</strong>
+            </h2>
+            <p className="about-text">
+              First is someone with a solid, credible track record of success. The Law Offices of Burg and Brock, Inc. have handled over 20,000 personal injury cases and earned a 99% success rate in the process. That long and illustrious track record has translated into over $1 billion in damages for our clients.... 
+              <button 
+                className="inline-learn-more" 
+                onClick={() => setShowDetail(true)}
+              >
+                Learn more
+              </button>
+            </p>
           </div>
         </div>
         
@@ -57,6 +46,13 @@ const About = () => {
               <h3>$1.0M</h3>
               <p>Rideshare</p>
             </div>
+          </div>
+        </div>
+
+        <div className="working-hours-container">
+          <div className="working-hours-box">
+             <span className="clock-icon">🕒</span>
+             <p>Working Hours : <strong>Mon- Fri : 9am- 5pm</strong></p>
           </div>
         </div>
       </div>
