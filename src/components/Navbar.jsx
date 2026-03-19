@@ -42,21 +42,17 @@ const Navbar = () => {
           <li><a href="#home" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
           <li><a href="#practice" onClick={() => setIsMenuOpen(false)}>PRACTICE AREAS</a></li>
           <li><a href="#results" onClick={() => setIsMenuOpen(false)}>RESULTS</a></li>
-          <li><a href="#attorneys" onClick={() => setIsMenuOpen(false)}>ATTORNEYS</a></li>
           <li><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
-          <li><a href="#news" onClick={() => setIsMenuOpen(false)}>ACCIDENT NEWS</a></li>
           <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>FEEDBACK</a></li>
 
           {/* Mobile Only CTA */}
           <li className="mobile-only-actions">
             <button className="btn btn-outline" onClick={() => { toggleModal(); setIsMenuOpen(false); }}>Contact Us</button>
-            <button className="btn btn-primary" onClick={handleCall}>Call Us</button>
           </li>
         </ul>
 
         <div className="nav-actions hide-on-mobile">
           <button className="btn btn-outline" onClick={toggleModal}>Contact Us</button>
-          <button className="btn btn-primary" onClick={handleCall}>Call Us</button>
         </div>
       </div>
 

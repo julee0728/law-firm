@@ -1,7 +1,7 @@
 .footer-main {
   background-color: var(--primary);
   color: white;
-  padding: 80px 0 30px;
+  padding: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr;
   gap: 60px;
-  margin-bottom: 60px;
+
 }
 
 .footer-logo {
@@ -135,6 +135,10 @@
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
     text-align: center;
   }
 
