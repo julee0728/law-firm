@@ -24,7 +24,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="container">
 
-        <div className="about-header">
+        <div className="about-header" >
           <span className="sub-tag">LAW FIRM</span>
 
           <h2>

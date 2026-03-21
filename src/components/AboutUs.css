@@ -1,228 +1,177 @@
-.about-us {
-    padding: 80px 0;
-    background: #f9fafb;
-}
-
-.about-us-content {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-}
-
-.about-text h3 {
-    margin-top: 20px;
-    color: #0d2c4a;
-}
-
-.about-text p {
-    color: #555;
-    line-height: 1.6;
-}
-
-.about-text ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about-text li {
-    margin: 8px 0;
-}
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+/* SECTION */
 .about-us {
-    padding: 120px 0;
-    /* 🔥 pehle 80 tha, ab zyada spacing */
-    background: #f9fafb;
+  padding: 100px 0;
+  background: #f9fafb;
 }
 
+/* HEADER */
 .section-header {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-header h2 {
-    font-size: 2.6rem;
-    /* 🔥 bada heading */
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .section-header p {
-    font-size: 1.1rem;
-    color: #555;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #555;
 }
 
-/* Main content */
+/* CONTENT BOX */
 .about-us-content {
-    max-width: 900px;
-    /* 🔥 width badha di */
-    margin: auto;
-    text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Headings */
+/* TEXT */
+.about-text {
+  text-align: center;
+}
+
 .about-text h3 {
-    margin-top: 30px;
-    font-size: 1.5rem;
-    /* 🔥 bada */
-    color: #0d2c4a;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #0d2c4a;
 }
 
-/* Paragraph */
 .about-text p {
-    font-size: 1.05rem;
-    color: #555;
-    line-height: 1.8;
-    margin-top: 10px;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 10px;
 }
 
-/* List */
-.about-text ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-.about-text li {
-    font-size: 1.05rem;
-    margin: 10px 0;
-}
-
-.about-us-content {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
+/* FLEX CARDS */
 .about-us-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 50px;
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* 🔥 important */
+  justify-content: center;
 }
 
-/* Card base */
+/* CARD */
 .about-card {
-    padding: 30px 25px;
-    border-radius: 16px;
-    background: #fff;
-    text-align: center;
-    transition: 0.3s ease;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+  flex: 1 1 300px; /* 🔥 responsive flex */
+  max-width: 320px;
+  position: relative;
+  padding: 30px 25px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  text-align: left;
+  transition: 0.3s ease;
+  overflow: hidden;
 }
 
-/* Gradient border */
+/* LEFT COLOR BAR */
 .about-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #ff7a18, #007bff, #28a745);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  border-radius: 10px;
 }
 
-/* Hover effect */
-.about-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Individual colors */
+/* COLORS */
 .about-card:nth-child(1)::before {
-    background: linear-gradient(135deg, #ff7a18, #ffb347);
+  background: #ff7a18;
 }
 
 .about-card:nth-child(2)::before {
-    background: linear-gradient(135deg, #007bff, #00c6ff);
+  background: #007bff;
 }
 
 .about-card:nth-child(3)::before {
-    background: linear-gradient(135deg, #28a745, #7bed9f);
+  background: #28a745;
 }
 
-/* Text */
+/* HOVER */
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* CARD TEXT */
 .about-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #0d2c4a;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0d2c4a;
 }
 
 .about-card p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
 }
 
 .about-card ul {
-    list-style: none;
-    padding: 0;
+  padding-left: 18px;
 }
 
 .about-card li {
-    margin: 8px 0;
-    font-size: 1rem;
+  margin: 6px 0;
 }
 
-/* Responsive */
+/* MOBILE */
 @media (max-width: 768px) {
-    .about-us-cards {
-        grid-template-columns: 1fr;
-    }
+  .about-us {
+    padding: 70px 15px;
+  }
+
+  .about-us-content {
+    padding: 25px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .about-us-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch; /* 🔥 important */
+  }
+
+  .about-card {
+    flex: 1 1 100%;
+    max-width: 100%; /* 🔥 full width */
+    width: 100%;
+  }
+
+  .about-us-content {
+    padding: 20px;
+  }
+}
+.about-card {
+  border-radius: 12px;
 }
 
-.about-desc {
-    max-width: 750px;
-    /* 🔥 control width */
-    margin: 20px auto 0;
-    /* center align */
-    text-align: center;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #555;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-header h2 {
-    margin-bottom: 15px;
-}
-
-/* Section */
-.about-us {
-    padding: 80px 0;
-    background: #f9fafb;
-}
-
-/* Header */
-.section-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-header h2 {
-    margin-bottom: 15px;
-}
-
-/* Header description (justify) */
-.section-header p {
-    text-align: justify;
-    max-width: 750px;
-    margin: 0 auto;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #555;
+@media (max-width: 768px) {
+  .about-card {
+    padding: 25px 20px;
+  }
 }

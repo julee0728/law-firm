@@ -12,7 +12,7 @@
 }
 
 .section-title {
-  font-size: 25px;
+  font-size: 24px !important;
   margin: 15px 0 20px;
   color: #1a202c;
 }
@@ -112,41 +112,58 @@
   z-index: -1;
 }
 
-/* Hover effect */
-.practice-card:hover {
-  transform: translateY(-8px) scale(1.02);
+/* Card Base */
+.practice-card {
+  padding: 25px;
+  border-radius: 14px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-/* Hover border change */
-.practice-card:hover::before {
-  background: linear-gradient(135deg, #ff4d4d, #6f42c1, #20c997);
-}
-
-/* Different colors for each card */
-.practice-card:nth-child(1)::before {
+/* Background Gradients */
+.practice-card:nth-child(1) {
   background: linear-gradient(135deg, #ff7a18, #ffb347);
 }
 
-.practice-card:nth-child(2)::before {
+.practice-card:nth-child(2) {
   background: linear-gradient(135deg, #007bff, #00c6ff);
 }
 
-.practice-card:nth-child(3)::before {
+.practice-card:nth-child(3) {
   background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
 }
 
-.practice-card:nth-child(4)::before {
+.practice-card:nth-child(4) {
   background: linear-gradient(135deg, #6f42c1, #a18cd1);
 }
 
-.practice-card:nth-child(5)::before {
+.practice-card:nth-child(5) {
   background: linear-gradient(135deg, #20c997, #7bed9f);
 }
 
-.practice-card:nth-child(6)::before {
+.practice-card:nth-child(6) {
   background: linear-gradient(135deg, #f7971e, #ffd200);
 }
 
+/* 🔥 TEXT WHITE (MAIN FIX) */
+.practice-card h3,
+.practice-card p {
+  color: #ffffff;
+}
+
+/* Better Readability */
+.practice-card h3 {
+  font-weight: 600;
+}
+
+.practice-card p {
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
 .practice-card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }

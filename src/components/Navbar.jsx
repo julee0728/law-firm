@@ -27,7 +27,6 @@ const Navbar = () => {
         <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="logo-text">
             <strong>LAW FIRM</strong>
-            <span>BURG & BROCK, INC.</span>
           </div>
         </div>
 
@@ -40,9 +39,9 @@ const Navbar = () => {
 
         <ul className={`nav-links ${isMenuOpen ? 'mobile-active' : ''}`}>
           <li><a href="#home" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
+          <li><a href="#about-us" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
           <li><a href="#practice" onClick={() => setIsMenuOpen(false)}>PRACTICE AREAS</a></li>
           <li><a href="#results" onClick={() => setIsMenuOpen(false)}>RESULTS</a></li>
-          <li><a href="#about-us" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
           <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>FEEDBACK</a></li>
 
           {/* Mobile Only CTA */}

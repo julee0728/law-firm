@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p style={{ textAlign: 'center', width: '100%' }}>© 2026 LAW FIRM. All Rights Reserved.</p>
+          <p style={{ textAlign: 'center', width: '100%' }}> © 2026 Ventoria Global.</p>
         </div>
       </div>
     </footer>

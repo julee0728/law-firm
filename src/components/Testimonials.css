@@ -21,7 +21,7 @@
 }
 
 .testimonials-header h2 {
-  font-size: 32px;
+  font-size: 24px;
   color: var(--primary);
   font-weight: 900;
 }
@@ -67,7 +67,7 @@
 
 /* Testimonial Card */
 .marquee-content .testimonial-card {
-  width: 350px;
+  width: 450px;
   height: 250px;
   flex-shrink: 0;
   padding: 30px 20px;
@@ -186,5 +186,34 @@
 
   .testimonial-card {
     padding: 30px;
+  }
+}
+/* 🔥 GLOBAL CONTAINER FIX */
+.container {
+  width: 100%;
+  max-width: 1400px;      /* space kam karega */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 🔥 SPECIFIC: Testimonials section (extra wide look) */
+.testimonials-section .container {
+  max-width: 1500px;      /* aur wide */
+}
+
+/* Optional: agar full edge-to-edge chahiye */
+.full-width {
+  max-width: 100% !important;
+  padding: 0 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .testimonials-section .container {
+    max-width: 100%;
   }
 }
