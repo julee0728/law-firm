@@ -84,3 +84,69 @@
     font-size: 14px;
   }
 }
+
+.practice-card {
+  position: relative;
+  padding: 25px 20px;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 0;
+}
+
+/* Gradient Border */
+.practice-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ff7a18, #007bff, #28a745);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Hover effect */
+.practice-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Hover border change */
+.practice-card:hover::before {
+  background: linear-gradient(135deg, #ff4d4d, #6f42c1, #20c997);
+}
+
+/* Different colors for each card */
+.practice-card:nth-child(1)::before {
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+}
+
+.practice-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.practice-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+}
+
+.practice-card:nth-child(4)::before {
+  background: linear-gradient(135deg, #6f42c1, #a18cd1);
+}
+
+.practice-card:nth-child(5)::before {
+  background: linear-gradient(135deg, #20c997, #7bed9f);
+}
+
+.practice-card:nth-child(6)::before {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.practice-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}

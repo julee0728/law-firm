@@ -42,7 +42,7 @@ const Navbar = () => {
           <li><a href="#home" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
           <li><a href="#practice" onClick={() => setIsMenuOpen(false)}>PRACTICE AREAS</a></li>
           <li><a href="#results" onClick={() => setIsMenuOpen(false)}>RESULTS</a></li>
-          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
+          <li><a href="#about-us" onClick={() => setIsMenuOpen(false)}>ABOUT US</a></li>
           <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>FEEDBACK</a></li>
 
           {/* Mobile Only CTA */}

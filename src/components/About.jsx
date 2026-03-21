@@ -25,7 +25,7 @@ const About = () => {
       <div className="container">
 
         <div className="about-header">
-          <span className="sub-tag">LAW OFFICES</span>
+          <span className="sub-tag">LAW FIRM</span>
 
           <h2>
             What should you look for in a{" "}

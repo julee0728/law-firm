@@ -1,0 +1,228 @@
+.about-us {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+    color: #0d2c4a;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text li {
+    margin: 8px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about-us {
+    padding: 120px 0;
+    /* 🔥 pehle 80 tha, ab zyada spacing */
+    background: #f9fafb;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.6rem;
+    /* 🔥 bada heading */
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Main content */
+.about-us-content {
+    max-width: 900px;
+    /* 🔥 width badha di */
+    margin: auto;
+    text-align: center;
+}
+
+/* Headings */
+.about-text h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    /* 🔥 bada */
+    color: #0d2c4a;
+}
+
+/* Paragraph */
+.about-text p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/* List */
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.about-text li {
+    font-size: 1.05rem;
+    margin: 10px 0;
+}
+
+.about-us-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-us-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+/* Card base */
+.about-card {
+    padding: 30px 25px;
+    border-radius: 16px;
+    background: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Gradient border */
+.about-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ff7a18, #007bff, #28a745);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+/* Hover effect */
+.about-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual colors */
+.about-card:nth-child(1)::before {
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+}
+
+.about-card:nth-child(2)::before {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+.about-card:nth-child(3)::before {
+    background: linear-gradient(135deg, #28a745, #7bed9f);
+}
+
+/* Text */
+.about-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #0d2c4a;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-card li {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-us-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-desc {
+    max-width: 750px;
+    /* 🔥 control width */
+    margin: 20px auto 0;
+    /* center align */
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    margin-bottom: 15px;
+}
+
+/* Section */
+.about-us {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+/* Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    margin-bottom: 15px;
+}
+
+/* Header description (justify) */
+.section-header p {
+    text-align: justify;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #555;
+}
