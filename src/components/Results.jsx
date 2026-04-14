@@ -25,7 +25,7 @@ const Results = () => {
               <div className="avatar">JP</div>
               <div>
                 <h4>James Parker</h4>
-                <span>Managing Partner, Downtown Chicago</span>
+                <span>Managing Partner, Downtown Sydney</span>
               </div>
             </div>
 
@@ -53,7 +53,7 @@ const Results = () => {
               <div className="avatar">SM</div>
               <div>
                 <h4>Sarah Miller</h4>
-                <span>Senior Attorney, Manhattan</span>
+                <span>Senior Attorney, Melbourne</span>
               </div>
             </div>
 
